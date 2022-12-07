@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\changelog.txt" />
+    <Content Remove="wwwroot\Classmates.html" />
+    <Content Remove="wwwroot\contact.html" />
+    <Content Remove="wwwroot\gallery-single.html" />
+    <Content Remove="wwwroot\gallery.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\changelog.txt" />
+    <None Include="wwwroot\Classmates.html" />
+    <None Include="wwwroot\contact.html" />
+    <None Include="wwwroot\gallery-single.html" />
+    <None Include="wwwroot\gallery.html" />
+  </ItemGroup>
+
+</Project>

@@ -45,7 +45,7 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+            <a href="@Url.Action("Index", "Home")" class="logo d-flex align-items-center  me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <i class="bi bi-camera"></i>
@@ -57,31 +57,7 @@
                     <li>@Html.ActionLink("Home","Index", "Home")</li>
                     <li>@Html.ActionLink("About","About", "Home")</li>
                     <li>@Html.ActionLink("Classmates", "Classmates", "Home")</li>
-                    <li class="dropdown">
-                        <a href="@Url.Action("Gallery", "Home")"><span>Projects</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li>
-                                <a href="@Url.Action("Gallery", "Home")">Dungeon</a>
-                            </li>
-
-                            <li>
-                                <a href="@Url.Action("Gallery", "Home")">StoreFront</a>
-                            </li>
-
-                            <li>
-                                <a href="@Url.Action("Gallery", "Home")">ToDo API</a>
-                            </li>
-
-                            <li>
-                                <a href="@Url.Action("Gallery", "Home")">React ToDo</a>
-                            </li>
-
-                            <li>
-                                <a href="@Url.Action("Gallery", "Home")">SAT</a>
-                            </li>
-
-                        </ul>
-                    </li>
+                    <li><a href="@Url.Action("Gallery", "Home")"><span>Projects</span></a></li>
 
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>

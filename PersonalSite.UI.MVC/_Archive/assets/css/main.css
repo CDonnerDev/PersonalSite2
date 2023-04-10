@@ -623,6 +623,7 @@ h6 {
   font-weight: 700;
   font-size: 24px;
   color: var(--color-primary);
+  text-align: center;
 }
 
 .about .content img {
